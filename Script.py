@@ -1,8 +1,8 @@
 class script(object):
     START_TXT = """<b>𝙷𝙴𝙻𝙻𝙾 {},</b>
-    
+    Iam   
 #Complete_Telegram_Movie_Search_BOT.
-Click <b>SEARCH MOVIES</b> Button or <b>send "Movie Name and year".</b>  """
+Click <b>SEARCH MOVIES</b> Button or <b>you can also use our other Search Bots.</b>  """
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
