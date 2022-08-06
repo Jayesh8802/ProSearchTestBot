@@ -44,12 +44,14 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
+        InlineKeyboardButton('🔎 SEARCH MOVIES', switch_inline_query_current_chat=query)],[
         InlineKeyboardButton('🤖BOT Updates Channel', url='https://t.me/ProsearchBOTS')],[
-        InlineKeyboardButton('🤖Inline Movie Search BOT 1', url='https://t.me/ProsearchRobot')],[
-        InlineKeyboardButton('🤖Movie Search BOT 2', url='https://t.me/Prosearch4bot')],[
-        InlineKeyboardButton('🤖Movie Search BOT 3', url='https://t.me/Prosearch3bot')],[
-        InlineKeyboardButton('🤖Movie Search BOT 4', url='https://t.me/Prosearch25bot')],[
-        InlineKeyboardButton('♦️TV/WEB Series Search BOT 🔍', url='https://t.me/ProsearchXBot')],
+        InlineKeyboardButton('MVSearchBOT 2', url='https://t.me/ProsearchRobot'),
+        InlineKeyboardButton('MVSearchBOT 3', url='https://t.me/Prosearch4bot')],[
+        InlineKeyboardButton('MVSearchBOT 4', url='https://t.me/Prosearch3bot'),
+        InlineKeyboardButton('MVSearch BOT 5', url='https://t.me/Prosearch25bot')],[
+        InlineKeyboardButton('♦️TV/WEB Series Search BOT 🔍', url='https://t.me/ProsearchXBot')],[
+        InlineKeyboardButton('🤖Group Auto Movies BOT', url='https://t.me/Promoviestelegrambot')]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -86,12 +88,14 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
+        InlineKeyboardButton('🔎 SEARCH MOVIES', switch_inline_query_current_chat=query)],[
         InlineKeyboardButton('🤖BOT Updates Channel', url='https://t.me/ProsearchBOTS')],[
-        InlineKeyboardButton('🤖Inline Movie Search BOT 1', url='https://t.me/ProsearchRobot')],[
-        InlineKeyboardButton('🤖Movie Search BOT 2', url='https://t.me/Prosearch4bot')],[
-        InlineKeyboardButton('🤖Movie Search BOT 3', url='https://t.me/Prosearch3bot')],[
-        InlineKeyboardButton('🤖Movie Search BOT 4', url='https://t.me/Prosearch25bot')],[
-        InlineKeyboardButton('♦️TV/WEB Series Search BOT 🔍', url='https://t.me/ProsearchXBot')],
+        InlineKeyboardButton('MVSearchBOT 2', url='https://t.me/ProsearchRobot'),
+        InlineKeyboardButton('MVSearchBOT 3', url='https://t.me/Prosearch4bot')],[
+        InlineKeyboardButton('MVSearchBOT 4', url='https://t.me/Prosearch3bot'),
+        InlineKeyboardButton('MVSearch BOT 5', url='https://t.me/Prosearch25bot')],[
+        InlineKeyboardButton('♦️TV/WEB Series Search BOT 🔍', url='https://t.me/ProsearchXBot')],[
+        InlineKeyboardButton('🤖Group Auto Movies BOT', url='https://t.me/Promoviestelegrambot')]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
