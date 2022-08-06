@@ -22,12 +22,14 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [[
+        InlineKeyboardButton('🔎 SEARCH MOVIES', switch_inline_query_current_chat=query)],[
         InlineKeyboardButton('🤖BOT Updates Channel', url='https://t.me/ProsearchBOTS')],[
-        InlineKeyboardButton('🤖Inline Movie Search BOT 1', url='https://t.me/ProsearchRobot')],[
-        InlineKeyboardButton('🤖Movie Search BOT 2', url='https://t.me/Prosearch4bot')],[
-        InlineKeyboardButton('🤖Movie Search BOT 3', url='https://t.me/Prosearch3bot')],[
-        InlineKeyboardButton('🤖Movie Search BOT 4', url='https://t.me/Prosearch25bot')],[
-        InlineKeyboardButton('♦️TV/WEB Series Search BOT 🔍', url='https://t.me/ProsearchXBot')],
+        InlineKeyboardButton('MVSearchBOT 2', url='https://t.me/ProsearchRobot'),
+        InlineKeyboardButton('MVSearchBOT 3', url='https://t.me/Prosearch4bot')],[
+        InlineKeyboardButton('MVSearchBOT 4', url='https://t.me/Prosearch3bot'),
+        InlineKeyboardButton('MVSearch BOT 5', url='https://t.me/Prosearch25bot')],[
+        InlineKeyboardButton('♦️TV/WEB Series Search BOT 🔍', url='https://t.me/ProsearchXBot')],[
+        InlineKeyboardButton('🤖Group Auto Movies BOT', url='https://t.me/Promoviestelegrambot')]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
