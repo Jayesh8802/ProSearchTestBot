@@ -22,7 +22,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [[
-        InlineKeyboardButton('🔎 SEARCH MOVIES', switch_inline_query_current_chat=query)],[
+        InlineKeyboardButton('🔎 SEARCH MOVIES', switch_inline_query_current_chat=''],[
         InlineKeyboardButton('🤖BOT Updates Channel', url='https://t.me/ProsearchBOTS')],[
         InlineKeyboardButton('MVSearchBOT 2', url='https://t.me/ProsearchRobot'),
         InlineKeyboardButton('MVSearchBOT 3', url='https://t.me/Prosearch4bot')],[
