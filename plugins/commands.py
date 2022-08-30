@@ -25,9 +25,9 @@ async def start(client, message):
         InlineKeyboardButton('🔎 SEARCH MOVIES 🔎', switch_inline_query_current_chat='')],[
         InlineKeyboardButton('🤖BOT Updates Channel', url='https://t.me/ProsearchBOTS')],[
         InlineKeyboardButton('MVSearchBOT 2', url='https://t.me/ProsearchRobot'),
-        InlineKeyboardButton('MVSearchBOT 3', url='https://t.me/Prosearch4bot')],[
-        InlineKeyboardButton('MVSearchBOT 4', url='https://t.me/Prosearch3bot'),
-        InlineKeyboardButton('MVSearch BOT 5', url='https://t.me/Prosearch25bot')],[
+        InlineKeyboardButton('MVSearchBOT 3🚫', url='https://t.me/Prosearch4bot')],[
+        InlineKeyboardButton('MVSearchBOT 4🚫', url='https://t.me/Prosearch3bot'),
+        InlineKeyboardButton('MVSearchBOT 5🚫', url='https://t.me/Prosearch25bot')],[
         InlineKeyboardButton('♦️TV/WEB Series Search BOT 🔍', url='https://t.me/ProsearchXBot')],[
         InlineKeyboardButton('🤖Group Auto Movies BOT', url='https://t.me/Promoviestelegrambot')]
         ]
